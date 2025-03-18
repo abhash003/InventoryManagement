@@ -1,6 +1,7 @@
 ﻿using Data.Repository.DataBase;
 using Data.Model;
 using Data.Repository.Repository.ProductRepo;
+using Microsoft.EntityFrameworkCore;
 
 namespace Data.Repository.ProductRepo
 {
@@ -20,11 +21,11 @@ namespace Data.Repository.ProductRepo
             return product;
         }
 
-        public List<Product> GetAllProducts()
+        public List<Product> GetAllProductsAsync()
         {
-            var products = _inventoryDbContext.Products.ToList();
+            var products = _inventoryDbContext.Products.ToListAsync();
 
-            return products;
+            return products.Result;
         }
 
         public void AddProducts(Product product)

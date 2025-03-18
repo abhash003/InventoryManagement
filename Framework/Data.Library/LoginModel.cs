@@ -7,19 +7,13 @@ using System.Threading.Tasks;
 
 namespace Data.Model
 {
-    public class User
+    public class LoginModel
     {
-        [Key]
-        public int UserId { get; set; }
         [Required]
         public string Username { get; set; }
 
         [Required]
-        public string EmailId { get; set; }
-
-        [Required]
         public string Password { get; set; }
-        [Required]
-        public string Role { get; set; }
+
     }
 }

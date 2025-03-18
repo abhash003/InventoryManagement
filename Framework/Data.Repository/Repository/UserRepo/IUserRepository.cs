@@ -6,7 +6,7 @@ namespace Data.Repository.Repository.UserRepo
     {
         User GetUser(int id);
 
-        List<User> GetAllUsers();
+        Task<List<User>> GetAllUsersAsync();
 
         void AddUser(User user);
 

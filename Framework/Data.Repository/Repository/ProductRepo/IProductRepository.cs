@@ -11,7 +11,7 @@ namespace Data.Repository.Repository.ProductRepo
     {
         Product GetProduct(int id);
 
-        List<Product> GetAllProducts();
+        List<Product> GetAllProductsAsync();
 
         void AddProducts(Product product);
 

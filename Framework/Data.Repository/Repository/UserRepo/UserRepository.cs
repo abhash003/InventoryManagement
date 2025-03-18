@@ -1,5 +1,6 @@
 ﻿using Data.Model;
 using Data.Repository.DataBase;
+using Microsoft.EntityFrameworkCore;
 
 namespace Data.Repository.Repository.UserRepo
 {
@@ -19,9 +20,9 @@ namespace Data.Repository.Repository.UserRepo
             return user;
         }
 
-        public List<User> GetAllUsers()
+        public async Task<List<User>> GetAllUsersAsync()
         {
-            var user = _inventoryDbContext.Users.ToList();
+            var user = await _inventoryDbContext.Users.ToListAsync();
 
             return user;
         }

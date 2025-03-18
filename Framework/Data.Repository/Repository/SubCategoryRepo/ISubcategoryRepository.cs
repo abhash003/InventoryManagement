@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Data.Repository.Repository.SubCategoryRepo
 {
-    internal interface ISubcategoryRepository
+    public interface ISubcategoryRepository
     {
         SubCategory GetSubCategory(int id);
 
