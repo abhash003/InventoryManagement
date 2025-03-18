@@ -1,0 +1,11 @@
+# Ignore OS generated files
+.github
+InventoryManagement/.vs/
+Framework/Data.Library/bin/
+Framework/Data.Library/obj/
+InventoryManagement/WebApplication1/Migrations/
+InventoryManagement/WebApplication1/obj/
+InventoryManagement/WebApplication1/bin/
+InventoryManagement/Data.Model/obj/
+Framework/Data.Repository/bin/
+Framework/Data.Repository/obj/
